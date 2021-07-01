@@ -11,13 +11,16 @@ import { NavigationComponent } from './components/template/navigation/navigation
 import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { HomeComponent } from './components/views/home/home.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavigationComponent
+    NavigationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatToolbarModule,
     MatIconModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
