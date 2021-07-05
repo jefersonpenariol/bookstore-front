@@ -1,18 +1,13 @@
 <mat-sidenav-container class="container" autosize>
     <mat-sidenav mode="side" opened>
         <mat-nav-list>
-            <a routerlink="" mat-list-item>
-                <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>
-                Home
-            </a>
-            <a mat-list-item>
-                <mat-icon aria-hidden="false" aria-label="book icon">menu_book</mat-icon>
-                Categorias
-            </a>
+            <a [routerLink]="['']" mat-list-item>
+                <mat-icon aria-hidden="false" aria-label="home icon">home</mat-icon>Home</a>
+            <a [routerLink]="['/categorias']" mat-list-item>
+                <mat-icon aria-hidden="false" aria-label="book icon">menu_book</mat-icon>Categorias</a>
         </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
-
