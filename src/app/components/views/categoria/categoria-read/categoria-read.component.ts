@@ -25,9 +25,7 @@ export class CategoriaReadComponent implements OnInit {
     })
   }
 
-  navegarParaCategoriaCreate(){
-    console.log("#########CREATE");
-    
+  navegarParaCategoriaCreate(){  
     this.router.navigate(["categorias/create"]);
   }
 }
