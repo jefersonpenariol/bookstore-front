@@ -31,4 +31,9 @@ export class CategoriaService {
   showMessage(mensagem: string): void{
     this.snake.open(mensagem, "Ok");
   }
+
+  delete(id: String):Observable<void>{
+    const url = this.baseUrl + '/categorias/' + id;
+    return this.http.delete<void>(url);
+  }
 }
